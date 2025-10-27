@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Demo Invitation - AI-Powered Website Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9em;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .greeting {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            color: #1e3a8a;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h3 {
+            color: #3b82f6;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            margin-top: 20px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .highlight-box strong {
+            color: #92400e;
+            font-size: 1.1em;
+        }
+
+        .demo-proof {
+            background: #f0f9ff;
+            border: 2px solid #3b82f6;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .demo-proof h3 {
+            margin-top: 0;
+        }
+
+        .proof-item {
+            display: flex;
+            align-items: start;
+            gap: 15px;
+            margin: 15px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .proof-number {
+            background: #3b82f6;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .proof-item strong {
+            color: #1e3a8a;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .value-prop {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .value-card {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #3b82f6;
+            text-align: center;
+        }
+
+        .value-card .icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .value-card h4 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .value-card p {
+            font-size: 0.95em;
+            color: #475569;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .cta-section h3 {
+            color: white;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .cta-section .date {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #059669;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .partnership-teaser {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 6px solid #f59e0b;
+            margin: 30px 0;
+        }
+
+        .partnership-teaser h3 {
+            color: #92400e;
+            margin-bottom: 15px;
+        }
+
+        .partnership-teaser ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .partnership-teaser li::before {
+            content: "💰 ";
+            margin-right: 10px;
+        }
+
+        .agenda {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .agenda-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .agenda-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .agenda-time {
+            color: #3b82f6;
+            font-weight: 700;
+            min-width: 80px;
+        }
+
+        .agenda-content strong {
+            color: #1e3a8a;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            padding: 40px;
+            text-align: center;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.9em;
+        }
+
+        .tech-badge {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 3px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .value-prop {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Exclusive Demo Invitation</h1>
+            <p class="subtitle">AI-Powered Website Development Platform</p>
+            <div class="badge">CONFIDENTIAL • PARTNERSHIP OPPORTUNITY</div>
+        </div>
+
+        <div class="content">
+            <p class="greeting">
+                <strong>Dear Todd, Sadie, and Mo,</strong>
+            </p>
+
+            <div class="highlight-box">
+                <strong>I recreated your entire Mindhub coworking website using only AI and natural language conversation.</strong>
+                <br><br>
+                No manual coding. No copy-paste. Just chat. And here's the kicker: <strong>This same toolkit can create, update, and edit ANY WordPress website.</strong> Not just replications - brand new sites, existing client sites, anything.
+                <br><br>
+                I want to show you the toolkit in action and discuss a partnership opportunity.
+            </div>
+
+            <div class="section">
+                <h2>🎯 What I'm Going to Show You (Live Real-Time Demo)</h2>
+
+                <div style="margin: 30px 0; padding: 20px; background: #f8fafc; border-radius: 12px;">
+                    <h3 style="text-align: center; color: #1e3a8a; margin-bottom: 20px;">The Evolution: Original → AI Recreation → Tier 3 in 5 Minutes</h3>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                        <div style="text-align: center;">
+                            <img src="mindhub-coworking.png"
+                                 alt="Original Mindhub Site"
+                                 style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                            <p style="margin-top: 10px; font-weight: 600; color: #64748b; font-size: 0.9em;">STEP 1</p>
+                            <p style="font-weight: 700; color: #3b82f6; font-size: 1.1em;">Original Site</p>
+                            <p style="font-size: 0.85em; color: #64748b;">mindhubcoworking.com</p>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <img src="wordpress-clone.png"
+                                 alt="WordPress Recreation"
+                                 style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                            <p style="margin-top: 10px; font-weight: 600; color: #64748b; font-size: 0.9em;">STEP 2</p>
+                            <p style="font-weight: 700; color: #10b981; font-size: 1.1em;">AI Recreation</p>
+                            <p style="font-size: 0.85em; color: #64748b;">Built via AI chat</p>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <div style="width: 100%; aspect-ratio: 4/3; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px;">
+                                <div style="font-size: 4em; margin-bottom: 20px;">📅</div>
+                                <div style="color: white; font-size: 2em; font-weight: 700; margin-bottom: 10px;">DEMO</div>
+                                <div style="color: white; font-size: 1.8em; font-weight: 600; margin-bottom: 20px;">WEDNESDAY</div>
+                                <div style="color: rgba(255,255,255,0.9); font-size: 1.1em; text-align: center; line-height: 1.4;">Built live in<br>real-time via chat</div>
+                            </div>
+                            <p style="margin-top: 10px; font-weight: 600; color: #64748b; font-size: 0.9em;">STEP 3</p>
+                            <p style="font-weight: 700; color: #f59e0b; font-size: 1.1em;">Tier 3 Enhanced</p>
+                            <p style="font-size: 0.85em; color: #64748b;">5 minutes via chat</p>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; padding: 15px; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 8px; margin-bottom: 15px;">
+                        <p style="color: #92400e; font-weight: 600; margin: 0; font-size: 1.05em;">
+                            ⚡ From original site to Tier 3 client-ready version in 5 minutes via natural language chat ⚡
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 15px; border-radius: 8px; border: 2px solid #10b981;">
+                        <p style="text-align: center; margin: 0; color: #059669; font-weight: 600;">
+                            💬 "Pick a new theme and update the design" → AI did it in 5 minutes
+                        </p>
+                    </div>
+
+                    <p style="text-align: center; margin-top: 15px; font-size: 0.9em; color: #64748b; font-style: italic;">
+                        This is what I'll demonstrate live during Wednesday's demo
+                    </p>
+                </div>
+
+                <div class="demo-proof">
+                    <h3>Watch Me Transform Your Site from Current → Tier 3 in Real-Time</h3>
+
+                    <div class="proof-item">
+                        <div class="proof-number">1</div>
+                        <div>
+                            <strong>Start with your current Mindhub site</strong>
+                            <br>
+                            <em>Your live public site at mindhubcoworking.com</em>
+                        </div>
+                    </div>
+
+                    <div class="proof-item">
+                        <div class="proof-number">2</div>
+                        <div>
+                            <strong>I chat with AI to enhance it</strong>
+                            <br>
+                            <em>"Add testimonials section", "Improve mobile responsiveness", "Add lead capture forms"</em>
+                        </div>
+                    </div>
+
+                    <div class="proof-item">
+                        <div class="proof-number">3</div>
+                        <div>
+                            <strong>AI updates the WordPress version in real-time</strong>
+                            <br>
+                            <em>No WordPress admin clicks. No manual coding. Just conversation.</em>
+                        </div>
+                    </div>
+
+                    <div class="proof-item">
+                        <div class="proof-number">4</div>
+                        <div>
+                            <strong>I show you the WordPress dashboard</strong>
+                            <br>
+                            <em>All media, pages, posts created from chat - proof it's automated</em>
+                        </div>
+                    </div>
+
+                    <div class="proof-item">
+                        <div class="proof-number">5</div>
+                        <div>
+                            <strong>Result: Your site is now a "Tier 3" enhanced version</strong>
+                            <br>
+                            <em>Better design, more features, ready for client delivery - built in 15 minutes via chat</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>💡 This Works on ANY WordPress Website</h2>
+
+                <div class="value-prop">
+                    <div class="value-card">
+                        <div class="icon">🔍</div>
+                        <h4>Site Replication</h4>
+                        <p>Convert any public website to WordPress automatically</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="icon">✨</div>
+                        <h4>Create from Scratch</h4>
+                        <p>Build brand new WordPress sites using only natural language</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="icon">🔧</div>
+                        <h4>Update Existing Sites</h4>
+                        <p>Edit any WordPress site - yours, clients', anyone's - via chat</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="icon">💬</div>
+                        <h4>Natural Language</h4>
+                        <p>Chat to make changes, watch WordPress dashboard update in real-time</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="icon">🤖</div>
+                        <h4>Multi-Agent</h4>
+                        <p>AI PM + AI Coder collaborate in real-time on projects</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="icon">⚡</div>
+                        <h4>Client Feedback Loop</h4>
+                        <p>Clients provide feedback, AI implements changes instantly</p>
+                    </div>
+                </div>
+
+                <h3>Full WordPress Capabilities:</h3>
+                <ul>
+                    <li><strong>Replicate any public site</strong> → AI extracts structure and rebuilds in WordPress</li>
+                    <li><strong>Create new sites from scratch</strong> → Describe your vision, AI builds it</li>
+                    <li><strong>Update existing WordPress sites</strong> → Works on any WP site you have access to</li>
+                    <li><strong>Natural language edits</strong> → "Change pricing to $500/month" → Watch dashboard update in real-time</li>
+                    <li><strong>Media management</strong> → Upload, organize, and optimize images automatically</li>
+                    <li><strong>Plugin & theme control</strong> → Install, configure, and manage via chat</li>
+                    <li><strong>Live WordPress dashboard proof</strong> → See pages, media, and content appear as you chat</li>
+                    <li><strong>Real-time client demos</strong> → Show progress live during build, clients see updates instantly</li>
+                </ul>
+            </div>
+
+            <div class="cta-section">
+                <h3>📅 Live Demo Session</h3>
+                <div class="date">Wednesday, October 30, 2025</div>
+                <p style="font-size: 1.1em; margin: 15px 0;">
+                    45-60 minutes • Virtual Meeting • Screen Share
+                </p>
+                <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1fWJmE36AJnLOavTuFdV7RTjWsWZdX_WSgrsx2HJLPsUNGXm4gNsi29GoKKm30P0-4pazEsG-0?gv=true"
+                   class="cta-button"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Schedule Demo on My Calendar →
+                </a>
+                <p style="margin-top: 20px; font-size: 0.95em;">
+                    Or email me: <a href="mailto:1william.forrester@gmail.com?subject=Demo%20RSVP%20-%20Mindhub%20AI%20Toolkit" style="color: white; text-decoration: underline;">1william.forrester@gmail.com</a>
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>📋 Demo Agenda</h2>
+
+                <div class="agenda">
+                    <div class="agenda-item">
+                        <div class="agenda-time">0-10 min</div>
+                        <div class="agenda-content">
+                            <strong>Show Your Recreated Site</strong>
+                            Side-by-side comparison: Original HTML vs. WordPress version
+                        </div>
+                    </div>
+
+                    <div class="agenda-item">
+                        <div class="agenda-time">10-25 min</div>
+                        <div class="agenda-content">
+                            <strong>Live Natural Language Edits + WordPress Dashboard Proof</strong>
+                            Watch me update the site by chatting with AI, then see the WordPress dashboard showing all media and pages built from chat
+                        </div>
+                    </div>
+
+                    <div class="agenda-item">
+                        <div class="agenda-time">25-35 min</div>
+                        <div class="agenda-content">
+                            <strong>Multi-Agent Collaboration Demo</strong>
+                            See AI PM and AI Coder working together in real-time collaboration
+                        </div>
+                    </div>
+
+                    <div class="agenda-item">
+                        <div class="agenda-time">35-45 min</div>
+                        <div class="agenda-content">
+                            <strong>Partnership Discussion</strong>
+                            Revenue sharing model for Tier 3 client sites
+                        </div>
+                    </div>
+
+                    <div class="agenda-item">
+                        <div class="agenda-time">45-60 min</div>
+                        <div class="agenda-content">
+                            <strong>PRD & SOW Review</strong>
+                            Technical details and implementation roadmap
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partnership-teaser">
+                <h3>💼 Partnership Opportunity: Per-Project Contract Model</h3>
+                <p style="margin-bottom: 15px;">
+                    <strong>You've been building great client relationships for 20 years.</strong> Now imagine what you could do with AI automation that lets you take on projects you couldn't before:
+                </p>
+                <ul>
+                    <li><strong>Take on new Tier 3 sites</strong> that were previously too small to be profitable</li>
+                    <li><strong>Maintain existing Tier 1 & 2 sites</strong> with instant updates via natural language</li>
+                    <li><strong>Per-project contract model</strong> - flexible engagement, not long-term commitment</li>
+                    <li><strong>Collaborative toolkit</strong> - Your team works alongside AI agents in real-time</li>
+                    <li>Build faster, increase margins, deliver happier clients</li>
+                </ul>
+                <p style="margin-top: 15px; font-style: italic; color: #92400e; font-size: 1.05em;">
+                    <strong>Why this works:</strong> Your 20 years of client relationships + My AI automation = Take on sites you couldn't before, faster builds, higher margins, happier clients
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>🛠️ Technology Stack (For Your Reference)</h2>
+                <div style="margin-top: 15px;">
+                    <span class="tech-badge">AI LLM</span>
+                    <span class="tech-badge">MCP Servers</span>
+                    <span class="tech-badge">WordPress REST API</span>
+                    <span class="tech-badge">Chrome DevTools Automation</span>
+                    <span class="tech-badge">WP-CLI</span>
+                    <span class="tech-badge">Natural Language Processing</span>
+                    <span class="tech-badge">Multi-Agent Orchestration</span>
+                    <span class="tech-badge">Comment-Based Collaboration</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🎪 Local WordPress Meetup Opportunity</h2>
+
+                <div class="highlight-box">
+                    <strong>Starting December 1st: Monthly WordPress Meetups at Mindgrub</strong>
+                    <br><br>
+                    After the demo, I'd like to propose monthly themed WordPress meetups at your location. Each month features a different focus—WordPress themes, plugin integrations, AI automation, site optimization, and more. We'll demonstrate the mindhubcoworking.com transformation and invite local WordPress developers, agencies, and site owners to see what's possible.
+                    <br><br>
+                    <strong>Why this works:</strong>
+                    <ul style="margin-top: 10px;">
+                        <li>Positions Mindgrub as Baltimore's AI WordPress innovation hub</li>
+                        <li>20-30 potential clients visit your space monthly</li>
+                        <li>Official WordPress.org meetup status (free promotion)</li>
+                        <li><strong>WordPress doesn't even offer this level of AI</strong> - completely novel</li>
+                        <li>Themed monthly topics keep content fresh and engaging</li>
+                        <li>Generate partnership leads and pilot projects together</li>
+                        <li>Build buzz before national WordCamp conferences</li>
+                    </ul>
+                </div>
+
+                <h3>Meetup Structure (First Wednesday Monthly)</h3>
+                <div style="background: #f8fafc; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                    <p style="margin-bottom: 10px;"><strong>6:00-6:15 PM:</strong> Networking (pizza/drinks)</p>
+                    <p style="margin-bottom: 10px;"><strong>6:15-6:45 PM:</strong> Live demo - Transform mindhubcoworking.com via AI chat</p>
+                    <p style="margin-bottom: 10px;"><strong>6:45-7:00 PM:</strong> Q&A and live "Can it do X?" demos</p>
+                    <p><strong>7:00-7:30 PM:</strong> Open networking, partnership discussions</p>
+                </div>
+
+                <p style="margin-top: 20px; font-style: italic; color: #475569;">
+                    <strong>Apply for official status:</strong> <a href="https://events.wordpress.org/organize-an-event/" target="_blank" style="color: #3b82f6;">events.wordpress.org/organize-an-event</a>
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>📬 What Happens After the Demo?</h2>
+                <ol style="margin-left: 20px;">
+                    <li><strong>You decide if you're interested</strong> (no pressure)</li>
+                    <li><strong>I share the full PRD and SOW</strong> (technical deep dive)</li>
+                    <li><strong>We discuss partnership terms</strong> (revenue split, exclusivity, support)</li>
+                    <li><strong>We pilot with 1-2 Tier 3 clients</strong> (prove the model)</li>
+                    <li><strong>Launch monthly WordPress meetups at Mindgrub</strong> (starting December 1st)</li>
+                    <li><strong>Scale up based on results</strong> (local meetups → national WordCamps)</li>
+                </ol>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 40px;">
+                <strong>Bottom Line:</strong> I can create, update, and edit ANY WordPress website using only AI conversation. Whether it's:
+                <br><br>
+                • <strong>Replicating a public site</strong> (like I did with yours)<br>
+                • <strong>Building a brand new site from scratch</strong><br>
+                • <strong>Updating an existing client site</strong><br>
+                <br>
+                All through natural language. No manual coding. Just chat. You'll see the WordPress dashboard update in real-time as changes happen from the conversation. Clients can collaborate with instant feedback - no WordPress expertise needed.
+                <br><br>
+                <strong>This isn't vaporware. This isn't a concept. This isn't "coming soon."</strong>
+                <br><br>
+                <strong style="font-size: 1.2em; color: #059669;">It's working right now. On your site. Let me show you.</strong>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1fWJmE36AJnLOavTuFdV7RTjWsWZdX_WSgrsx2HJLPsUNGXm4gNsi29GoKKm30P0-4pazEsG-0?gv=true"
+                   class="cta-button"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Schedule Demo on My Calendar →
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Questions before the demo?</strong></p>
+            <p>Email: <a href="mailto:1william.forrester@gmail.com" style="color: #3b82f6;">1william.forrester@gmail.com</a></p>
+            <p style="margin-top: 10px;">
+                <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1fWJmE36AJnLOavTuFdV7RTjWsWZdX_WSgrsx2HJLPsUNGXm4gNsi29GoKKm30P0-4pazEsG-0?gv=true"
+                   style="color: #3b82f6; text-decoration: underline;"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Schedule on my calendar
+                </a>
+            </p>
+            <p style="margin-top: 20px; font-size: 0.7em; color: #94a3b8;">
+                CONFIDENTIAL: This invitation and the technology described are proprietary and protected as trade secrets.
+                <br>
+                Please do not share without permission.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scroll for any internal links (if added later)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Track page view (optional - add analytics here)
+        console.log('Demo invitation viewed:', new Date().toISOString());
+    </script>
+</body>
+</html>
